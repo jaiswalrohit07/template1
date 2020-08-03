@@ -1,0 +1,250 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Css Variables 
+ */
+ :root{
+     --navbar-height:59px;
+ }
+ #navbar{
+     display:flex;
+     align-items: center;
+     position: relative;
+     font-family:  'Recursive', sans-serif;
+     font-weight: 800;
+ }
+ #navbar::before{
+     content: "";
+     background-color: black;
+     position: absolute;
+     width:100%;
+     height:100%;
+     z-index: -1;
+     opacity:0.5;
+
+ }
+ /* logo and images */
+#logo{
+    margin:10x 34px;
+
+}
+#logo img{
+    height: 56px;
+    margin:3px 6px;
+    border: 2px solid black;
+    border-radius: 40px;
+    
+}
+ /* List items for navigation bar */
+ #navbar ul{
+     display: flex;
+ }
+ #navbar li{
+     list-style: none;
+    
+     font-size: 1.3rem;
+ }
+ #navbar li a{
+     padding: 3px 22px;
+     display:block;
+     color:white;
+     text-decoration: none;
+    
+ }
+ #navbar li a:hover{
+     background-color: white;
+     color:black;
+     border:1px;
+     border-radius: 10px;
+
+ }
+ /* home section 
+  */
+  #home{
+      display:flex;
+      flex-direction: column;
+      padding: 3px 220px;
+      justify-content: center;
+      align-items: center;
+      height:580px;
+  }
+  #home::before{
+      content: "";
+      position: absolute;
+      background: url('images/back1.jpg') no-repeat center center/cover;
+      /* background-size: cover; */
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity:0.89;
+      top: 0;
+  }
+  #home h1{
+      color:rgb(131, 53, 53);
+      text-align: center;
+      font-size: 3.8rem;
+      padding:12px;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  /* Utility class  */
+  .h-primary{
+      font-size: 3.8rem;
+      padding:12px;
+  }
+  .h-services{
+      font-size: 3.8rem;
+      padding:12px;
+      
+  }
+  .h-secondary{
+      font-size: 2.3rem;
+      padding:12px;
+  }
+  #home p{
+      font-size:1.5rem;
+      font-family: 'Recursive', sans-serif;;
+      
+  }
+  .btn{
+      padding: 6px 20px;
+      border: 2px solid rgb(66, 220, 18);
+      background-color: rgb(157, 214, 22);
+      margin:17px;
+      border-radius: 9px;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  /* services center  */
+  .center{
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+   #services-containter { 
+    background-color: burlywood;
+    /* border: 2px solid green; */
+    font-family: 'Ubuntu', sans-serif;
+    padding:60px;
+
+
+   }
+  #services {
+      margin:34px;
+      display: flex;
+      /* background-color: burlywood; */
+  }
+  
+  #services .box{
+      border: 2px solid brown;
+      padding :30px;
+      margin:10px 6px;
+      width:auto;
+      border-radius: 23px;
+      background-color: rgb(209, 222, 223);
+     
+     
+      
+  }
+  #services .box img{
+      height:170px;
+      margin:auto;
+      display:block;
+     
+      
+  }
+/* client section  */
+#clients-section{
+    /* height:354px; */
+
+
+
+}
+
+.client{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clients-items{
+    margin:3px;
+    padding:34px;
+    
+}
+.clients-items img{
+    width:140px;
+    border: 1px solid green;
+    border-radius: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    width:100%;
+    height:254px;
+    z-index: -1;
+    opacity:0.4;
+}
+/* Contact section  */
+#contact{
+     position: relative;
+     margin:0px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('images/bg.jpg') no-repeat center center/cover;
+
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input{
+    width: 100%;
+    height:1.5rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    padding:0.1rem 0.5rem;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#contact-box form{
+    width:40%;    
+}
+#contact-box textarea{
+    width:98%;
+    padding:0.5rem;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    /* font-size: 2.5rem; */
+}
+/* #submit{
+    width:5rem;
+    height:2rem;
+} */
+
+
+footer{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding:30px;
+
+}
